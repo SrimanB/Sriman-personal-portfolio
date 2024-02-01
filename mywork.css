@@ -1,0 +1,148 @@
+body{
+    background-image: url(black\ bg.jpg);
+    color: white;
+    font-family: "alegreya sans";
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skill-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skill-icons button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    width: 100px;
+    height: 100px;
+    background-color: var(--tile-color);
+}
+.btn img{
+    width: 70px;
+    height: 70px;
+}
+.btn:hover{
+    background-color: var(--tile-color-hover);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 200px;
+    cursor: pointer;
+}
+.btn:hover{
+    .btn-name{
+        display: flex;
+    }
+}
+.btn-name{
+    display: none;
+    font-size: 12px;
+    color: white;
+    font-weight: 800;
+}
+.workbox{
+    width: 1000px;
+    flex-wrap: wrap;
+}
+
+.work-grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: transparent;
+    position: absolute;
+    top: 4vh;
+    left: 2vw;
+    cursor: pointer;
+}
+.home img{
+    height: 40px;
+    width: 40px;
+}
+.link{
+    text-decoration: none;
+}
+
+@media(max-width: 500px) {
+    body{
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .skill-icons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .skill-icons button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        border: 1px solid transparent;
+        border-radius: 30px;
+        width: 70px;
+        height: 70px;
+        background-color: var(--tile-color);
+    }
+    .btn img{
+        width: 30px;
+        height: 30px;
+    }
+    .btn::after{
+        background-color: var(--tile-color-hover);
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        width: 200px;
+        cursor: pointer;
+    }
+    .btn::after{
+        .btn-name{
+            display: flex;
+        }
+    }
+    .btn-name{
+        display: none;
+        font-size: 10px;
+        color: white;
+        font-weight: 100;
+    }
+    .workbox{
+        width: 250px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .work-grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
